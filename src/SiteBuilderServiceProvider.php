@@ -67,8 +67,14 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
                 '2023_03_21_174543_content_object_blocks_table',
                 '2023_03_25_091916_create_layouts_table',
                 '2023_03_29_125325_create_sidebars_table',
+                '2023_03_29_134611_create_sidebar_widget_table',
                 '2023_03_29_134543_create_widgets_table',
                 '2023_03_29_134611_create_widget_sidebar_table',
+                '2023_03_30_15000_create_form_objects_table',
+                '2023_03_30_15001_create_form_object_types_table',
+                '2023_03_30_15002_create_form_custom_pages_table',
+                '2023_03_30_15003_create_form_content_objects_table',
+                '2023_03_08_153118_create_media_table',
             ])
             ->hasViews('views');
 
