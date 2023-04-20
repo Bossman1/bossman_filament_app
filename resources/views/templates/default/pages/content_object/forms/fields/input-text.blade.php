@@ -13,7 +13,7 @@
         name="{{ $form->object_type_key }}___{{ $key }}"
         placeholder="{{ $form->value }}" />
 
-    @if ($errors->has($form->object_type_key.'___'.$key))
+    @if (isset($errors) && $errors->has($form->object_type_key.'___'.$key))
         <p class="help-block text-danger">{!! $errors->first($form->object_type_key.'___'.$key) !!}</p>
     @endif
 @if(isset($argument->wrapper)) </div> @endif

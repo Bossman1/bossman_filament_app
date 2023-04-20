@@ -68,7 +68,9 @@
                 @endif
 
                 @if($sidebar->key != 'project-sidebar-right' && $sidebar->key != 'project-sidebar-left')
+                    <div class="col-lg-4">
                         @includeIf($templatePath.'pages.content_object.sidebar.'.$sidebar->key)
+                    </div>
                 @endif
 
 
