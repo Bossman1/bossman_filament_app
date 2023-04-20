@@ -51,7 +51,7 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
     public function configurePackage(Package $package): void
     {
         parent::configurePackage($package);
-
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $package
             ->name(static::$name)
             ->hasConfigFile(['filament-package-name-config', 'bossman_cms'])
