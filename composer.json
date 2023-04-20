@@ -1,5 +1,5 @@
 {
-    "name": "nick-kh/bossman-fulament-app",
+    "name": "nick-kh/laravel-filament-cms",
     "description": "CMS build on laravel and filament",
     "type": "library",
     "require": {
