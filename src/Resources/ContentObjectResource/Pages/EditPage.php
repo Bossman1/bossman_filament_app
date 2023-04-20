@@ -3,7 +3,7 @@
 namespace BossmanFilamentApp\Resources\ContentObjectResource\Pages;
 
 
-use App\Traits\CategoryTrait;
+use BossmanFilamentApp\Traits\CategoryTrait;
 use Closure;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\ColorPicker;

@@ -2,7 +2,7 @@
 
 namespace BossmanFilamentApp\Resources;
 
-use App\Traits\CategoryTrait;
+use BossmanFilamentApp\Traits\CategoryTrait;
 use Closure;
 use Filament\Forms;
 use Filament\Forms\Components\Card;
