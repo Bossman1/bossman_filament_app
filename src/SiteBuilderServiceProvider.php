@@ -80,23 +80,24 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
     {
         parent::packageBooted();
 
-        $this->publishes([
-            __DIR__ . '/resources' => base_path('app/Filament/Resources/'),
-        ], 'filament-package-name-resources');
-//        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'bossmanView');
+
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/bossmanView'),
         ], 'bossman_views');
 
+        $this->publishes([
+            __DIR__ . '/resources' => base_path('app/Filament/Resources/'),
+        ], 'bossman-filament-resources');
 
-//        $this->publishes([
-//            __DIR__.'/../Models' => base_path('app/Models/'),
-//        ], 'filament-package-name-models');
 
-//
-//        Livewire::component(Content::getName());
+
+        $this->publishes([
+            __DIR__.'/../Models' => base_path('app/Models/'),
+        ], 'bossman-filament-models');
+
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+
     }
 
 
