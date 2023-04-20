@@ -26,7 +26,7 @@ class BaseController extends Controller
             $this->locale = 'ka';
         }
 
-        $this->templatePath = 'views::templates.' . config('bossman_cms.template') . '.';
+        $this->templatePath = 'bossmanView::templates.' . config('bossman_cms.template') . '.';
 
 
         $this->locale = session()->get('locale');
@@ -125,7 +125,7 @@ class BaseController extends Controller
 
     public static function templatePath(){
 
-        return 'views::templates.' . config('bossman_cms.template') . '.';
+        return 'bossmanView::templates.' . config('bossman_cms.template') . '.';
     }
 
 }

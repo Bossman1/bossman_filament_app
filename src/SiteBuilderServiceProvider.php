@@ -85,10 +85,10 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
         ], 'filament-package-name-resources');
 //        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
-//        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bossman_cms_views');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bossmanView');
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/bossman_filament_app/'),
-        ], 'bossman_cms_views');
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/bossmanView'),
+        ], 'bossman_views');
 
 
 //        $this->publishes([
