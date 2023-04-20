@@ -22,7 +22,7 @@ use Spatie\LaravelPackageTools\Package;
 
 class SiteBuilderServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'filament-site-builder-package';
+    public static string $name = 'bossman-cfilament-site-builder-package';
 
     protected array $pages = [
 //        Content::class
@@ -96,11 +96,15 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
             __DIR__ . '/resources' => base_path('app/Filament/Resources/'),
         ], 'bossman-filament-resources');
 
+        $this->publishes([
+            __DIR__.'/../database' => base_path('database'),
+        ], 'bossman-databases');
 
 
         $this->publishes([
             __DIR__.'/../Models' => base_path('app/Models/'),
         ], 'bossman-filament-models');
+
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
