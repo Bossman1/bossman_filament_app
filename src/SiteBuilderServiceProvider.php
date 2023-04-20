@@ -22,7 +22,7 @@ use Spatie\LaravelPackageTools\Package;
 
 class SiteBuilderServiceProvider extends PluginServiceProvider
 {
-    public static string $name = 'bossman-cfilament-site-builder-package';
+    public static string $name = 'bossman-filament-package';
 
     protected array $pages = [
 //        Content::class
