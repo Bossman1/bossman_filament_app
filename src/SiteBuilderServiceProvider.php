@@ -54,7 +54,7 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $package
             ->name(static::$name)
-            ->hasConfigFile(['filament-package-name-config', 'bossman_cms'])
+            ->hasConfigFile(['bossman_cms'])
 //            ->hasMigrations([
 //                '2020_02_04_000858_create_templates_table',
 //                '2023_02_22_154933_create_object_types_table',

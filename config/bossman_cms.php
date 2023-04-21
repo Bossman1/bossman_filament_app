@@ -1,4 +1,4 @@
 <?php
 return [
-    'template' => env('TEMPLATE_NAME')
+    'template' => env('TEMPLATE_NAME','default')
 ];
