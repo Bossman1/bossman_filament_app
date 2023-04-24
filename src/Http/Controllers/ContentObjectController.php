@@ -18,7 +18,7 @@ class ContentObjectController extends BaseController
     public function __construct()
     {
         parent:: __construct();
-        $this->content_paginate = config('content.paginate');
+        $this->content_paginate = config('bossman_cms.php.paginate');
         $this->listViewPath = self::templatePath().'pages.content_object.list_view';
 
     }
