@@ -107,7 +107,7 @@ class SiteBuilderServiceProvider extends PluginServiceProvider
         ], 'bossman-filament-models');
 
         $this->publishes([
-            __DIR__.'/../public/plugins' => base_path('public/'),
+            __DIR__.'/../public' => base_path('public/'),
         ], 'bossman-public-assets');
 
 
