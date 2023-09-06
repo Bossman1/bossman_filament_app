@@ -1,5 +1,5 @@
 ## install laravel
-## install filament
+## install filament 2.0
 ### run:
 > composer require filament/spatie-laravel-media-library-plugin
 
